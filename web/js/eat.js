@@ -10,7 +10,7 @@ $(function () {
       url: "rec/list.txt",
       dataType: "text",
       success: function (data) {
-        list = data.split("\r\n");
+        list = data.replace(/(\r\n|\n|\r)/gm, "\r\n").split("\r\n");
         // 对list中的数据进行过滤，去掉空格，空行，注释行
         list = list.filter(function (item) {
           return item && item.trim() && !item.startsWith("#");
