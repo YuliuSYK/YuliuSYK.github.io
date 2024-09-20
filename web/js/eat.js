@@ -7,7 +7,7 @@ $(function () {
     // 读取rec/list.txt
     var list = "";
     $.ajax({
-      url: "/rec/list.txt",
+      url: "../rec/list.txt",
       dataType: "text",
       success: function (data) {
         list = data.replace(/(\r\n|\n|\r)/gm, "\r\n").split("\r\n");
