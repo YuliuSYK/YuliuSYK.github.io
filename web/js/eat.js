@@ -3,7 +3,6 @@ $(function () {
     heading = $("h1"),
     timer;
   $("#start").click(function () {
-    $("#stop_u").hide();
     // 读取rec/list.txt
     var list = "";
     $.ajax({
@@ -45,7 +44,6 @@ $(function () {
       }, 50);
       run = 1;
     } else {
-      $("#stop_u").show();
       heading.html(heading.html().replace("吃什么？", "吃这个！"));
       $(this).val("吃什么？");
       clearInterval(timer);
