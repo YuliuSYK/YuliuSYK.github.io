@@ -1,259 +1,297 @@
 /* 基础样式 */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+    overflow-x: hidden;
 }
 
 /* 容器样式 */
 .container {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 30px 0 50px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px 0 50px 0;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 10px 0;
+    position: relative;
+}
+
+.signature {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.refresh-btn {
+    position: absolute;
+    right: 0;
+    top: 180px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.refresh-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto;
 }
 
 /* 表单样式 */
 form {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 label {
-  width: 90%;
-  padding: 8px;
-  margin-top: 8px;
+    width: 90%;
+    padding: 8px;
+    margin-top: 8px;
 }
 
 /* 输入框和文本域样式 */
 input[type="text"], textarea, select {
-  width: 700px;
-  padding: 8px;
-  margin-top: 8px;
-  box-sizing: border-box; /* 包含边框和内边距在内的宽度 */
+    width: 700px;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box; /* 包含边框和内边距在内的宽度 */
 }
 
 textarea {
-  resize: none; /* 不可调整大小 */
+    resize: none; /* 不可调整大小 */
 }
 
 /* 提交按钮样式 */
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  outline: none; /* 移除焦点时的轮廓 */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    outline: none; /* 移除焦点时的轮廓 */
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 input[type="submit"]:active {
-  background-color: #3e8e41;
+    background-color: #3e8e41;
 }
 
 input[type="submit"]:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
 
 /* 响应消息样式 */
 .response {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .error {
-  color: red;
+    color: red;
 }
 
 /* 列表样式 */
 ul {
-  background-color: #e9ecef;
-  transition: background-color 0.3s;
-  border-radius: 5px;
-  list-style-type: none; /* 移除默认列表样式 */
-  padding: 0; /* 移除默认内边距 */
-  margin: 0; /* 移除默认外边距 */
+    background-color: #f5f6fa;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul li {
-  margin-bottom: 8px;
-  padding: 20px;
-  border-radius: 4px;
-  background-color: #e9ecef; /* 明确设置背景色 */
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-  transition: background-color 0.3s;
-  font-size: 20px;
+    margin-bottom: 8px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #f5f6fa;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    transition: background-color 0.3s;
+    font-size: 20px;
 }
 
 ul li:hover {
-  background-color: #dde2e6;
+    background-color: #e7eaed;
 }
 
 /* 链接样式 */
 a {
-  text-decoration: none; /* 移除下划线 */
-  color: #007bff; /* 设置链接的颜色 */
-  transition: color 0.3s ease; /* 平滑颜色变化 */
+    text-decoration: none;
+    color: #4a6cb3;
+    transition: color 0.1s ease, transform 0.1s ease;
+    font-weight: 500;
+    display: inline-block;
 }
 
 /* 鼠标悬停效果 */
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-a:visited {
-  color: #551a8b;
-}
-
-a.block-link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  background-color: #007bff;
-  text-align: center;
-  border-radius: 5px;
-}
-
-a.block-link:hover {
-  background-color: #0056b3;
+    color: #3a508c;
+    cursor: pointer;
+    transform: scale(1.015) translateY(-1px);
 }
 
 /* 基本表格样式 */
 table {
-  width: 100%; /* 表格宽度占满容器 */
-  border-collapse: collapse; /* 边框合并 */
-  margin: 20px 0; /* 外边距 */
-  font-family: Arial, sans-serif; /* 字体 */
-  table-layout: fixed; /* 固定表格布局 */
+    width: 100%; /* 表格宽度占满容器 */
+    border-collapse: collapse; /* 边框合并 */
+    margin: 20px 0; /* 外边距 */
+    font-family: Arial, sans-serif; /* 字体 */
+    table-layout: fixed; /* 固定表格布局 */
 }
 
 /* 表格头部样式 */
 thead {
-  background-color: #f2f2f2; /* 背景色 */
-  color: #333; /* 字体颜色 */
+    background-color: #f2f2f2; /* 背景色 */
+    color: #333; /* 字体颜色 */
 }
 
 /* 表格头部单元格样式 */
 th {
-  padding: 10px; /* 内边距 */
-  text-align: left; /* 文本对齐 */
-  border-bottom: 2px solid #ddd; /* 底部边框 */
-  word-break: break-all; /* 内容在任意字符处断行 */
+    padding: 10px; /* 内边距 */
+    text-align: left; /* 文本对齐 */
+    border-bottom: 2px solid #ddd; /* 底部边框 */
+    word-break: break-all; /* 内容在任意字符处断行 */
 }
 
 /* 表格内容单元格样式 */
 td {
-  padding: 10px; /* 内边距 */
-  border-bottom: 1px solid #ddd; /* 底部边框 */
-  word-break: break-all; /* 内容在任意字符处断行 */
+    padding: 10px; /* 内边距 */
+    border-bottom: 1px solid #ddd; /* 底部边框 */
+    word-break: break-all; /* 内容在任意字符处断行 */
 }
 
 /* 鼠标悬停在表格行上时的样式 */
 tr:hover {
-  background-color: #f5f5f5; /* 背景色 */
+    background-color: #f5f5f5; /* 背景色 */
 }
 
 /* 响应式表格设计 */
 @media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
+    table {
+        border: 0;
+    }
 
-  thead {
-    display: none; /* 隐藏表头 */
-  }
+    thead {
+        display: none; /* 隐藏表头 */
+    }
 
-  tr {
-    margin-bottom: 10px; /* 行间距 */
-    display: block;
-    border-bottom: 2px solid #ddd;
-    white-space: nowrap;
-  }
+    tr {
+        margin-bottom: 10px; /* 行间距 */
+        display: block;
+        border-bottom: 2px solid #ddd;
+        white-space: nowrap;
+    }
 
-  td {
-    display: block;
-    text-align: right;
-    padding-left: 50%; /* 留出空间显示数据标签 */
-    position: relative;
-    white-space: normal;
-  }
+    td {
+        display: block;
+        text-align: right;
+        padding-left: 50%; /* 留出空间显示数据标签 */
+        position: relative;
+        white-space: normal;
+    }
 
-  td::before {
-    /* 数据标签，显示在左侧 */
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: bold;
-  }
+    td::before {
+        /* 数据标签，显示在左侧 */
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
 }
 
 /*block在屏幕宽度小于768px时，将表格转换为块级元素，以适应小屏幕，显示效果不佳，故在下面添加了更好的响应式设计*/
 @media (max-width: 768px) {
-  td {
-    display: block;
-    text-align: left;
-    padding-left: 0;
-  }
+    td {
+        display: block;
+        text-align: left;
+        padding-left: 0;
+    }
 }
 
 /* 为数据标签添加样式 */
 td[data-label]:before {
-  content: attr(data-label);
-  font-weight: bold;
-  margin-right: 10px;
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 /* 按钮样式 */
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 button:active {
-  background-color: #00408d;
+    background-color: #00408d;
 }
 
 button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  /*a {
-    font-size: 14px;
-  }*/
-  input[type="text"], textarea, select {
-    width: 100%; /* 调整输入框宽度以适应小屏幕 */
-  }
+    /*a {
+      font-size: 14px;
+    }*/
+    input[type="text"], textarea, select {
+        width: 100%; /* 调整输入框宽度以适应小屏幕 */
+    }
 }
 
 pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }

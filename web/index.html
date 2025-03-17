@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>YuliuSYK</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="./css/utils.css">
-  <link rel="stylesheet" type="text/css" href="./css/star.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>YuliuSYK</title>
+    <meta name="description" content="YuliuSYK的个人主页">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/utils.css">
+    <link rel="stylesheet" type="text/css" href="./css/star.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="start-bg">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 </div>
 <div class="container">
-  <h1>YuliuSYK</h1>
-  <ul>
-    <li><a href="./pages/eat.html">中午吃什么</a></li>
-    <li><a href="./pages/showInfo.html">信息展示页</a></li>
-  </ul>
+    <div class="profile">
+        <img src="./img/avatar.jpg" alt="头像" class="avatar">
+        <h1>YuliuSYK</h1>
+        <button class="refresh-btn" id="refreshSignature">🔄</button>
+        <p class="signature" id="signature"></p>
+        <div class="divider"></div>
+    </div>
+    <ul>
+        <li><a href="./pages/eat.html">中午吃什么</a></li>
+        <li><a href="./pages/showInfo.html">信息展示页</a></li>
+    </ul>
 </div>
+<script src="./js/index.js"></script>
 </body>
 </html>

@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-  <title>信息展示页</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="../css/utils.css">
-  <link rel="stylesheet" type="text/css" href="../css/star.css">
+    <meta charset="UTF-8"/>
+    <title>信息展示页</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../css/utils.css">
+    <link rel="stylesheet" type="text/css" href="../css/star.css">
 </head>
 <body>
 <div class="start-bg">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 </div>
 <div class="container">
-  <h1>浏览器与会话信息</h1>
-  <table>
-    <tr>
-      <th style="width: 25%">参数名称</th>
-      <th style="width: 25%">参数描述</th>
-      <th style="width: 50%">参数值</th>
-    </tr>
-    <script>
-      var navigatorInfo = [
-        ["浏览器代码名", "浏览器的代码名", navigator.appCodeName],
-        ["浏览器名称", "浏览器的名称", navigator.appName],
-        ["浏览器版本", "浏览器的平台和版本信息", navigator.appVersion],
-        ["启用cookie", "浏览器是否启用cookie", navigator.cookieEnabled],
-        ["浏览器语言", "浏览器的首选语言", navigator.language],
-        ["浏览器在线情况", "浏览器是否处于在线模式", navigator.onLine],
-        ["浏览器平台", "运行浏览器的操作系统平台", navigator.platform],
-        ["浏览器用户代理", "由客户机发送服务器的 user-agent 头部的值", navigator.userAgent]
-      ];
-      var screenInfo = [
-        ["屏幕高度", "屏幕的高度", screen.height],
-        ["屏幕宽度", "屏幕的宽度", screen.width],
-        ["可用屏幕高度", "屏幕的高度减去 Windows 任务栏之后的高度", screen.availHeight],
-        ["可用屏幕宽度", "屏幕的宽度减去 Windows 任务栏之后的宽度", screen.availWidth],
-        ["颜色深度", "目标设备或缓冲器上的调色板的比特深度", screen.colorDepth],
-        ["颜色分辨率", "屏幕的颜色分辨率（每像素的位数）", screen.pixelDepth]
-      ];
-      var locationInfo = [
-        ["完整的 URL", "当前页面的完整 URL", location.href],
-        ["主机名", " URL 的主机名", location.hostname],
-        ["端口号", " URL 的端口号", location.port],
-        ["协议", "页面使用的协议（http: 或 https:）", location.protocol],
-        ["路径", " URL 的路径部分", location.pathname]
-      ];
-      var documentInfo = [
-        ["文档标题", "文档的标题", document.title],
-        ["文档编码", "文档的编码", document.charset],
-        ["文档类型", "文档的类型", document.contentType]
-      ];
-      var allInfo = navigatorInfo.concat(screenInfo, locationInfo, documentInfo);
-      for (var i = 0; i < allInfo.length; i++) {
-        document.write("<tr>");
-        document.write("<td>" + allInfo[i][0] + "</td>");
-        document.write("<td>" + allInfo[i][1] + "</td>");
-        document.write("<td>" + allInfo[i][2] + "</td>");
-        document.write("</tr>");
-      }
-    </script>
-  </table>
+    <h1>浏览器与会话信息</h1>
+    <table>
+        <tr>
+            <th style="width: 25%">参数名称</th>
+            <th style="width: 25%">参数描述</th>
+            <th style="width: 50%">参数值</th>
+        </tr>
+        <script>
+            var navigatorInfo = [
+                ["浏览器代码名", "浏览器的代码名", navigator.appCodeName],
+                ["浏览器名称", "浏览器的名称", navigator.appName],
+                ["浏览器版本", "浏览器的平台和版本信息", navigator.appVersion],
+                ["启用cookie", "浏览器是否启用cookie", navigator.cookieEnabled],
+                ["浏览器语言", "浏览器的首选语言", navigator.language],
+                ["浏览器在线情况", "浏览器是否处于在线模式", navigator.onLine],
+                ["浏览器平台", "运行浏览器的操作系统平台", navigator.platform],
+                ["浏览器用户代理", "由客户机发送服务器的 user-agent 头部的值", navigator.userAgent]
+            ];
+            var screenInfo = [
+                ["屏幕高度", "屏幕的高度", screen.height],
+                ["屏幕宽度", "屏幕的宽度", screen.width],
+                ["可用屏幕高度", "屏幕的高度减去 Windows 任务栏之后的高度", screen.availHeight],
+                ["可用屏幕宽度", "屏幕的宽度减去 Windows 任务栏之后的宽度", screen.availWidth],
+                ["颜色深度", "目标设备或缓冲器上的调色板的比特深度", screen.colorDepth],
+                ["颜色分辨率", "屏幕的颜色分辨率（每像素的位数）", screen.pixelDepth]
+            ];
+            var locationInfo = [
+                ["完整的 URL", "当前页面的完整 URL", location.href],
+                ["主机名", " URL 的主机名", location.hostname],
+                ["端口号", " URL 的端口号", location.port],
+                ["协议", "页面使用的协议（http: 或 https:）", location.protocol],
+                ["路径", " URL 的路径部分", location.pathname]
+            ];
+            var documentInfo = [
+                ["文档标题", "文档的标题", document.title],
+                ["文档编码", "文档的编码", document.charset],
+                ["文档类型", "文档的类型", document.contentType]
+            ];
+            var allInfo = navigatorInfo.concat(screenInfo, locationInfo, documentInfo);
+            for (var i = 0; i < allInfo.length; i++) {
+                document.write("<tr>");
+                document.write("<td>" + allInfo[i][0] + "</td>");
+                document.write("<td>" + allInfo[i][1] + "</td>");
+                document.write("<td>" + allInfo[i][2] + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
 </div>
 <div style="position: fixed; right: 10px; bottom: 10px; background-color: #f4f4f4;
         padding: 10px; border-radius: 5px; border: 1px solid #ccc; text-align: center;">
-  <a href="../index.html" style="text-decoration: none; color: #000000;">Back to
-    Home</a>
+    <a href="../index.html" style="text-decoration: none; color: #000000;">Back to
+        Home</a>
 </div>
 </body>
 </html>
