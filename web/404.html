@@ -9,7 +9,28 @@
 </head>
 <body>
 <div class="container">
-    <h1>404 Not Found</h1>
+    <div class="error-illustration">
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:#e6e6e6;stop-opacity:1"/>
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="240" height="240" fill="url(#skyGradient)"/>
+            <path d="M0,100 Q30,110 60,100 Q90,90 120,100 Q150,110 180,100 Q210,90 240,100" stroke="#3b3b4f"
+                  stroke-width="1" fill="none"/>
+            <path d="M0,120 Q30,130 60,120 Q90,110 120,120 Q150,130 180,120 Q210,110 240,120" stroke="#3b3b4f"
+                  stroke-width="1" fill="none"/>
+            <path d="M0,140 Q30,150 60,140 Q90,130 120,140 Q150,150 180,140 Q210,130 240,140" stroke="#3b3b4f"
+                  stroke-width="1" fill="none"/>
+            <circle cx="120" cy="120" r="30" fill="#f5f5f5"/>
+            <text x="102" y="128" font-size="20" font-weight="bold" fill="#333333">404</text>
+            <circle cx="120" cy="120" r="40" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-dasharray="6"/>
+        </svg>
+    </div>
+    <h1 class="error-title">404 Not Found</h1>
+    <p class="error-description">不要温和地走进那片迷失的黑夜，先回首页寻找光明。</p>
 </div>
 <div style="position: fixed; right: 10px; bottom: 10px; background-color: #f4f4f4;
         padding: 10px; border-radius: 5px; border: 1px solid #ccc; text-align: center;">
