@@ -37,6 +37,13 @@ if (randomOrder === null) {
 
 // 更新页面上的签名内容
 function updateSignature() {
+    // 更新到下一个签名
+    currentIndex = (currentIndex + 1) % randomOrder.length;
+    if (currentIndex === 0) {
+        // 如果到达序列末尾，生成新的随机序列
+        randomOrder = generateRandomOrder(signatures.length);
+        localStorage.setItem('randomOrder', JSON.stringify(randomOrder));
+    }
     const signatureIndex = randomOrder[currentIndex];
     document.getElementById('signature').textContent = signatures[signatureIndex];
     // 保存当前签名索引到本地存储
@@ -49,13 +56,6 @@ document.addEventListener('DOMContentLoaded', updateSignature);
 
 // 为刷新签名按钮添加点击事件
 document.getElementById('refreshSignature').addEventListener('click', function () {
-    // 更新到下一个签名
-    currentIndex = (currentIndex + 1) % randomOrder.length;
-    if (currentIndex === 0) {
-        // 如果到达序列末尾，生成新的随机序列
-        randomOrder = generateRandomOrder(signatures.length);
-        localStorage.setItem('randomOrder', JSON.stringify(randomOrder));
-    }
     updateSignature();
 });
 
