@@ -105,3 +105,19 @@ body {
     width: 50px;
     height: 22px;
 }
+
+/* 链接样式 */
+a {
+    text-decoration: none;
+    color: #4a6cb3;
+    transition: color 0.1s ease, transform 0.1s ease;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* 鼠标悬停效果 */
+a:hover {
+    color: #3a508c;
+    cursor: pointer;
+    transform: scale(1.015) translateY(-1px);
+}
